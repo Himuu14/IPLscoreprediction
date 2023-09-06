@@ -1,19 +1,18 @@
 # IPL Score Predictor
 
-This Streamlit webapp enables user to predict total runs between teams using current runs and wickets.
+This Streamlit web app enables users to predict total runs between teams using current runs and wickets.
 
 **Algorithms used:**
 
 * Linear Regression
 * K-Nearest Neighbor Regressor 
-* XGBoost Regressor
+
 * RandomForest Regressor
-* SVR
 * Decision Tree Regressor
 
-**Hyperparamter Optimization:**
+**Hyperparameter Optimization:**
 
-Used optuna for paramter optimization.
+I used Optuna for parameter optimization.
 
 **Dataset:**
 
@@ -21,9 +20,9 @@ The dataset comprises of over by over details of matches and runs from 2008 to 2
 
 Dataset Used: ipl_data.csv
 
-* mid - match id
+* mid-match id
 * date - when matches are played
-* venue - place where matches aew played
+* Venue - place where matches are played
 * bat_team - batting team
 * bowl_team - bowling team
 * batsman - batsman
@@ -33,8 +32,8 @@ Dataset Used: ipl_data.csv
 * overs - overs - next 3 are based on this
 * run_last_5 - runs scored in last 5 overs
 * wicket_last_5 - wickets in last 5 overs
-* stricker - batsman playing as main 1
-* non-striker - batsman playing as runner up - not main 0
+* Stricker - batsman playing as main 1
+* non-striker - batsman playing as runner-up - not main 0
 * total - total score (target variable)
 
 **Streamlit App:**
